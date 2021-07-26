@@ -1,0 +1,17 @@
+/* 
+    Simple Hello world Program
+    By ITfyMe.com 
+*/
+
+// include library
+#include <stdio.h>
+#include<stdlib.h>
+int main(int argc, char *argv[]) {
+  int a,b,c;
+  printf("enter a and b\n");
+  scanf("%d %d",&a,&b);
+  c=a+(~b+1);
+  printf("addition c=%d \n",c);
+}
+
+

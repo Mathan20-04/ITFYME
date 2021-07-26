@@ -1,0 +1,174 @@
+<html>
+<head>
+ 
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+<style>
+	/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.col-sm-3,.col-sm-9{
+overflow:auto;
+height:100%;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.col-sm-3,.col-sm-9{
+overflow:auto;
+height:100%;
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.col-sm-3,.col-sm-9{
+overflow:auto;
+height:100%;
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.col-sm-3,.col-sm-9{
+overflow:auto;
+height:100%;
+border:0.5px solid lightgrey;
+}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.col-sm-3,.col-sm-9{
+overflow:auto;
+height:650px;
+border-right:0.5px solid lightgrey;
+
+}}
+	html {
+  height: 100vh;
+}
+body {
+  min-height:100vh;
+}
+.col-sm-3,.col-sm-9{
+mini-height:100vh;
+overflow:auto;
+}
+.form-control,.input-group-prepend,.input-group-text{
+height:33px;
+margin-bottom:12px;
+font-size:14px;
+font-weight:bold;
+}
+.btn{
+font-size:14px;
+font-weight:bold;
+}
+select{
+height:33px;}
+
+.btn-success,.btn-danger{
+margin:2px;}
+	</style>
+<body>
+	<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+	<br>
+<ul class="list-group">
+  <li class="list-group-item active">FirstName</li>
+  <li class="list-group-item">SecondName</li>
+    <li class="list-group-item">SurName</li>
+
+ 
+</ul>	
+</div>
+    <div class="col-sm-9">
+	<div class="container">
+	<br>
+	<form class="form-row">
+	<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <span class="input-group-text" >FirstName</span>
+  </div>
+  <input type="text" class="form-control" placeholder="firstname" >
+</div>
+
+	<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <span class="input-group-text" >LastName</span>
+  </div>
+  <input type="text" class="form-control" >
+</div>
+	
+	<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <span class="input-group-text" >Mobile Number</span>
+  </div>
+  <input type="text" class="form-control" placeholder="firstname" >
+</div>
+
+	<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <span class="input-group-text" >Roll Number</span>
+  </div>
+  <input type="number" class="form-control">
+</div>
+<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="form-control">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+	  <button class="btn btn-outline-secondary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+</div>
+<div class="input-group col-md-6">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+</div>
+
+<span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
+
+<button class="btn btn-success btn-lg">Submit</button>
+<button class="btn btn-danger btn-lg">Cancel</button>
+
+</span>
+	
+	
+	
+
+
+
+	</form>
+	</div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

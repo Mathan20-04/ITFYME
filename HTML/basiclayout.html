@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            nav{
+                float:left;
+                width:30%;
+                height:100px;
+                background:#5ec;
+                padding:20px;
+            }
+            nav ul{
+                list-style-type:circle;
+                padding:0;
+            }
+            article{
+                float:left;
+                width:30%;
+                height:100px;
+                background-color:#de2;
+                padding:20px;
+            }
+            section::after{
+                content: "You are amazing";
+                display:table;
+                clear:both;
+            }
+            footer{
+                background-color:#f2e;
+                padding:20px;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Basic Layout</h1>
+        <header>
+            <h2>abc</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">abc</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <article>
+            <h1>Layout</h1>
+            <p>They are lot of html elements there</p>
+        </article>
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+/* 
+    Simple Hello world Program
+    By ITfyMe.com 
+*/
+
+// include library
+#include <stdio.h>
+int main(int argc, char *argv[]) {
+  int a=20,b=10;
+printf("value is %d \n",a+=b);
+printf("value is %d \n",a-=b);
+printf("value is %d \n",a/=b);
+printf("value is %d \n",a*=b);
+printf("value is %d \n",a%=b);
+}
+

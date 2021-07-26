@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>ResponsiveLayout</title>
+        <style>
+            @media(max-width:480px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media(min-width:481px) and (max-width:767px) {
+            body{
+                background-color: red;
+            }
+        }
+        @media(min-width:768px) and (max-width:1024px) {
+            body{
+                background-color:blue;
+            }
+        }
+        @media(min-width:1025px) and (max-width:1280px) {
+            body{
+                background-color: green;
+            }
+        }
+        @media(min-width:1281px)  {
+            body{
+                background-color:orange;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>RESPONSIVE LAYOUT</h1>
+        <p>ResponsiveLayout is </p>
+        <button onclick="myFunction()">Click Me</button>
+        <p id="demo">  </p>
+        <script>
+        function myFunction() {
+        document.getElementById("demo").innerHTML = "Responsive Layout";
+        }
+        </script>        
+    </body>
+</html>

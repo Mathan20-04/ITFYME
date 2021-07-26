@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
+    *{
+        box-sizing:content-box;
+    }
+    nav{
+        float: left;
+        width: 13%;
+        height: 600px;
+        background: #ccc;
+        padding: 20px;
+   }
+   .header{
+        border: 10px;
+        color:azure;
+        padding: 10px;
+
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 80%;
+        background-color: #f1f1f1;
+        height: 600px;
+    }
+    section::after{
+        display: table;
+        clear: both;
+    }
+    </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">ExamSystem</h1>
+    <header>
+        <button>Master</button>&nbsp;&nbsp;
+        <button>Transaction</button>&nbsp;&nbsp;
+        <button>Report</button>&nbsp;&nbsp;
+        <button>Logout</button>
+    </header><br>
+    <div>
+        <section>
+        <nav>
+            <h1 style="text-align: center;">State List</h1>
+            <ul>
+                   <li><a href="#">Karnataka</a></li> 
+                    <li><a href="#">TamilNadu</a></li>
+                    <li><a href="#">Kerala</a></li>
+                    <li><a href="#">Andhra Pradhesh</a></li>   
+            </ul>
+        </nav>
+        <article>
+            <h1>State Component</h1><br><br>
+            <form>
+                <label for="fname">state name:</label><br>
+                <input type="text" id="fname" name="fname" ><br>
+                <label for="fname">state code:</label><br>
+                <input type="text" id="fname" name="fname" ><br>
+            </form>
+            <footer style="text-align: right;"> 
+                <button style="size:120px;">cancel</button>&nbsp;&nbsp;
+                <button>save</button>&nbsp;&nbsp;
+            </footer>
+
+        </article>
+       
+     </section>
+    </div>
+        
+    </body>
+    </html>

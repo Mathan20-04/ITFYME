@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ITFYME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:teal;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: yellow;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color:pink;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>ITFYME</h2>
+</header>
+<section>
+  <nav>
+      <h3 style="font: size 15px; color:palevioletred">ProgramingLanguage</h3>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JAVASCRIPT</a></li>
+      <li><a href="#">PYTHON</a></li>
+      <li><a href="#">C</a></li>
+      <li><a href="#">JAVA</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">MYSQL</a></li>
+      <li><a href="#">KOTLIN</a></li>
+      <li><a href="#">PERL</a></li>
+      <li><a href="#">VISUALBASIC</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">c#</a></li>
+      <li><a href="#">Swift</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">RUBY</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>ITFYME</h1>
+    <img src="D:\ITFYME\HTML\itfyme.PNG" width="150px" height="150px"/>
+    <address>1st block, #25, 2nd Main Rd, Mysore Bank Colony, 3rd Phase, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085.</address>
+  </article>
+</section>
+<footer>
+  <p>Email us: itfyme@gmail.com</p>
+</footer>
+</body>
+</html>

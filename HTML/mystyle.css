@@ -1,0 +1,25 @@
+body{
+    background-color: silver;
+}
+h1{
+    border:thick;
+    background-color:palevioletred;
+}
+p{
+    border:medium;
+    text-decoration:underline;
+    background-color:powderblue;
+}
+table,th,td{
+    border:2px solid blue;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+}
+th{
+    background-color: violet;
+}
+td{
+    background-color:mediumturquoise;
+}
