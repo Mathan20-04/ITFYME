@@ -1,0 +1,30 @@
+<div>
+  <app-subjectlist (subjectSelected)="onSelected($event)"></app-subjectlist>
+  <div class="subjectdetail">
+    Do subjectdetail implementation here!!!
+    <button (click)="addNew()"  [disabled]="this.mode != 'Start'"> ADD</button>
+    <button (click)="Save()" [hidden]="this.mode == 'Start'"> Save</button>
+    <button (click)="Cancel()" [hidden]="this.mode == 'Start'"> Cancel</button>
+    <button (click)="getList()" [hidden]="this.mode != 'Start'"> get</button>
+    <button (click)="Delete()" [hidden]="this.mode == 'Start'"> delete</button>
+   
+    
+    <div [hidden]= "mode == 'Start'">
+      Subject Name<input type="text" name="name" [(ngModel)]="name" [value] = "" (change)="makeDirty()" >
+      Subject Code<input type="text" name="code" [(ngModel)]="code" [value] = "" (change)="makeDirty()" >
+      Subject ID<input type="text" name="id" [(ngModel)]="id"  [value]=""  >
+    </div>
+    <br>
+    <!--dropdown-->
+    <select name="ls" [(ngModel)] = "subject" class="form-control">
+      <option value="" selected>Choose...</option>
+      <option *ngFor="let st of subjectlist; let idx = index" value="{{st.getSubjectid()}}">{{st.getName()}}</option>
+    </select>
+    <!-- <select name="stateList" [(ngModel)]="StateID" class="form-control">
+        <option value="" selected>Choose...</option>
+        <option *ngFor="let st of stateList; let idx = index" value = "{{st.getStateid()}}"
+                >{{st.getName()}}</option> state Name
+      </select><br> -->
+
+  </div>
+</div>

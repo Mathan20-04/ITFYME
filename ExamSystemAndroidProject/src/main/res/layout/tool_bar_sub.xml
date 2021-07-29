@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/black"
+    android:minHeight="?attr/actionBarSize"
+    app:showAsAction="ifRoom|withText"
+    android:outlineSpotShadowColor="@color/white"
+    android:fitsSystemWindows="true"
+    app:popupTheme="@color/white"
+    android:tooltipText=""
+    app:layout_scrollFlags="scroll|enterAlways">
+
+<!--    <SearchView-->
+<!--        android:id="@+id/searchView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:queryHint="Search Here"-->
+<!--        android:iconifiedByDefault="false"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/txtToolbarTitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--       />-->
+
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtToolbarTitle"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="260dp"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/searchLayout"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_search_24"/>
+            </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/cartLayout"
+    android:layout_alignParentRight="true"
+    android:layout_height="match_parent"
+    >
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_action_cart"/>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/count"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    android:background="@drawable/badge_shape"
+                    android:layout_alignEnd="@+id/image"/>
+</RelativeLayout>
+</RelativeLayout>
+</LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,7 @@
+<div class="listbox">
+  <div class="listitem" (scroll)="onScrollDown($event)">
+    <ul *ngFor="let item of subjectList">
+      <li (click) = "selected(item)"><div style="float:left ; padding:5px">{{item.getName()}}</div><br><br><div style="float:right">{{item.getCode()}}</div></li>
+    </ul>
+  </div>
+</div>

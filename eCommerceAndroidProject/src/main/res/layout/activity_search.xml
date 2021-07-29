@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".activity.SearchActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar_sub"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="63dp"
+        android:id="@+id/searchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <!--List View from which data is to be searched-->
+
+</LinearLayout>
+

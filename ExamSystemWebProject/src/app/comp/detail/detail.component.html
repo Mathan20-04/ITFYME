@@ -1,0 +1,16 @@
+  <div>
+    <app-list></app-list>
+    <div class="detail">
+      Do detail implementation here!!!
+      <button (click)="addNew()"  [disabled]="this.mode != 'Start'"> ADD</button>
+      <button (click)="Save()" [hidden]="this.mode == 'Start'"> Save</button>
+      <button (click)="Cancel()" [hidden]="this.mode == 'Start'"> Cancel</button>
+      <button (click)="getList()" [hidden]="this.mode != 'Start'"> Get</button>
+      <div [hidden]= "mode == 'Start'">
+        State Name<input type="text" name="name" [value] = "" (change)="makeDirty()" ><br>
+        State Code<input type="text" name="code" [value] = "" (change)="makeDirty()" ><br>
+        State ID  <input type="text" name="id" [value] = "" >
+      </div>
+    </div>
+  </div>
+

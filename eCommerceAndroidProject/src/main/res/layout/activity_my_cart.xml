@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    tools:context=".activity.MyCartActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/blank_toolbar"
+        android:layout_alignParentTop="true">
+    </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/re">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="2dp">
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/cartEmpty"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCartEmpty"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Your Cart is Empty"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCartEmpty"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:id="@+id/txtClickHere"
+                android:text="Click Here"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_below="@id/txtCartEmpty"
+                android:textSize="20dp"
+                android:id="@+id/txtContine"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="To Continue Shopping"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/re"
+        android:background="#f5f5f5"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Total Cost"
+            android:textAlignment="center"
+            android:textColor="#121e31"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingBottom="1dp"
+            android:text="$"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingBottom="1dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="17sp" />
+        <Button
+
+            android:layout_marginTop="5dp"
+            android:id="@+id/btncontinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+
+            app:icon="@drawable/ctn"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
