@@ -1,0 +1,40 @@
+<!-- <p>return-comp works!</p> -->
+
+<div class="box" >
+    <div>
+        <div >
+        <img src="" >
+        ProductName
+        <input type="text" name = "name" value = "{{order.Name}}"><br>
+    </div>
+    <br><br>
+    <div>
+        price
+        <input type="text" value = "{{order.Price}}">
+        Reason
+        <input type="text" name = "name" [(ngModel)] = "reason">
+
+    </div>
+        <br><br>
+        qty
+        <select>
+        <option>1</option>
+        <option>2</option>
+        </select>
+    </div>
+            <br><br>
+</div>
+<br><br>
+<div class="box" >
+    <div>
+        <div >
+        <p><b>Refund method</b></p><br><br>
+        <input type="radio">Add to Wallet<br>
+        <input type="radio">Add to Bank<br>	<br>
+        Returndate<input type="date">
+    </div>
+    <br>
+    <button style="float:right ;" (click) = "onClickConfirm()">Confirm Return</button>
+    <br><br>
+    </div>
+</div><br><br>

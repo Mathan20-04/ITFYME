@@ -1,0 +1,30 @@
+<div class="row " style="padding-right: 10px;" >
+  <div class="checkout-btn" style="padding-right:100px ; ">
+    <button type="button"  style="background-color:rgb(68, 51, 51); float: right; ;color: rgb(255, 255, 255); " class="btn btn-success"  (click)="onClick()">
+        Buy Now 
+    </button></div>
+    <div class="card col-12"*ngFor="let item of cart ;  let i = index  ">
+      <div class="col-2">
+        <div class="im" ><img [src] = "item.imageurl"   alt="Avatar" style="width:150px; height: 120px;"></div>
+      </div>
+      <div class="col-10">
+        <p style="width: 80%;">ProductName:-&nbsp;&nbsp;{{item.productname}} </p>
+        <p style="width: 80%;">Price:-&nbsp;&nbsp;{{item.price}} </p>
+        <p >Total:-&nbsp;&nbsp;{{item.price*item.qty}} </p>
+        <p>Qty:-<input type="number" id="select" name="Qty" min="1" max="10" [(ngModel)] = "item.qty" > &nbsp; &nbsp; &nbsp; &nbsp;
+        <button style="background-color:rgb(216, 189, 168) ; size: 2px ;color: black;" type="button" class="btn " (click)="onClickUpdate(i)">
+          Update
+        </button></p> 
+        <button style="background-color:lightgray ; ; color: black;" type="button" class="btn btn-danger" (click)=" onClickRemove(i)">
+          <span class="fa fa-remove" ></span> Remove
+        </button>
+      </div>
+    </div>
+</div>
+<h4><p style = "padding :10px" *ngIf="getTotal() == 0">Your cart is empy please add cart items
+<button style="background-color:rgb(216, 189, 168) ; size: 2px ;color: black;" type="button" class="btn " (click) = "ocClickGoHere()" >
+          Go Here
+        </button></p> </h4>
+<h4><p style = "padding :10px" *ngIf="getTotal() != 0" >Total:-&nbsp;&nbsp;{{getTotal()}}</p></h4>   
+<br>
+
